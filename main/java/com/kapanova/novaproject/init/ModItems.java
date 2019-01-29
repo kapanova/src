@@ -52,5 +52,5 @@ public class ModItems {
 	
 	//Food w/ Effects
 	//public static final Item TUTORIUM_APPLE = new FoodBase("tutorium_apple", 6, 9.6f, false);
-	public static final Item TUTORIUM_APPLE = new FoodEffectBase("tutorium_apple", 6, 9.6f, false, new PotionEffect(MobEffects.SPEED, 2*(60*20), 1, false, true));
+	public static final Item TUTORIUM_APPLE = new FoodEffectBase("tutorium_apple", 6, 9.6f, false);
 }

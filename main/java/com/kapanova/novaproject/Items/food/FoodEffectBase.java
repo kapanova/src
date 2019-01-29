@@ -1,38 +1,33 @@
 package com.kapanova.novaproject.Items.food;
 
-import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class FoodEffectBase extends FoodBase
 
 {
 	PotionEffect effect;
-	public FoodEffectBase(String name, int amount, float saturation, boolean isAnimalFood, PotionEffect effect)
+	public FoodEffectBase(String name, int amount, float saturation, boolean isAnimalFood)
 	{
 		super(name, amount, saturation, isAnimalFood);
 		setAlwaysEdible();
-		this.effect = effect;
 	}
 	
 	@Override
-	protected void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player)
+	public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving)
 	{
-		
-		if(!worldIn.isRemote ) {
-			player.addPotionEffect(new PotionEffect(effect.getPotion(), effect.getDuration(),effect.getAmplifier(), effect.getIsAmbient(), effect.doesShowParticles()));
-			player.addPotionEffect(new PotionEffect(effect.getPotion(), effect.getDuration(),effect.getAmplifier(), effect.getIsAmbient(), effect.doesShowParticles()));
-		}
+
+		entityLiving.addPotionEffect(new PotionEffect(MobEffects.SPEED, 2*(20*60), 1, false, true));
+		entityLiving.addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 2*(20*60), 1, false, true));
+		return super.onItemUseFinish(stack, worldIn, entityLiving);
 		
 	}
-	@SideOnly(Side.CLIENT)
-	public boolean hasEffect(ItemStack stack)
-	{
-		
-		return true;
-		
-	}
+	@Override
+    public boolean hasEffect(ItemStack stack) 
+    {
+        return true;
+    }
 }
