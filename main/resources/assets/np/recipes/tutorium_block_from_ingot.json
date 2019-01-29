@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "III",
+        "III",
+        "III"
+    ],
+    
+    "key":
+    {
+        "I":
+        {
+            "item": "np:tutorium_ingot"
+        }
+    },
+    
+    "result":
+    {
+        "item": "np:tutorium_block",
+        "count": 1
+    }
+}

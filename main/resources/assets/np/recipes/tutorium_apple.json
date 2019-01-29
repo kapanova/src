@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "III",
+        "IAI",
+        "III"
+    ],
+    
+    "key":
+    {
+        "I":
+        {
+            "item": "np:tutorium_ingot"
+        },
+        "A":
+        {
+            "item": "minecraft:apple"
+        }
+    },
+    
+    "result":
+    {
+        "item": "np:tutorium_apple",
+        "count": 1
+    }
+}

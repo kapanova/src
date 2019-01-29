@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "NNN",
+        "NNN",
+        "NNN"
+    ],
+    
+    "key":
+    {
+        "N":
+        {
+            "item": "np:tutorium_nugget"
+        }
+    },
+    
+    "result":
+    {
+        "item": "np:tutorium_ingot",
+        "count": 1
+    }
+}

@@ -1,0 +1,23 @@
+
+    //Items
+item.tutorium_ingot.name=Tutorium Ingot
+item.tutorium_nugget.name=Tutorium Nugget
+
+    //Blocks
+tile.tutorium_ore.name=Tutorium Ore
+tile.tutorium_block.name=Block Of Tutorium
+
+    //Tools
+item.tutorium_sword.name=Tutorium Sword
+item.tutorium_shovel.name=Tutorium Shovel
+item.tutorium_pickaxe.name=Tutorium Pickaxe
+item.tutorium_axe.name=Tutorium Axe
+
+    //Armor
+item.tutorium_helmet.name=Tutorium Helmet
+item.tutorium_chestplate.name=Tutorium Chestplate
+item.tutorium_leggings.name=Tutorium Leggings
+item.tutorium_boots.name=Tutorium Boots
+
+    //Food w/ Effect
+item.tutorium_apple.name=Tutorium Apple
